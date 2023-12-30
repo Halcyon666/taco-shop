@@ -1,0 +1,19 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "5.0", //加入这句代码即可
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": ["esnext", "dom"]
+  },
+  // 新加
+  "vueCompilerOptions": {
+    // "experimentalRuntimeMode": "runtime-uni-app"  // 已经弃用
+    "nativeTags": ["block", "component", "template", "slot"]
+  },
+
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

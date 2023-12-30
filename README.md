@@ -10,7 +10,7 @@ And the origin project author is **Dave Gray**.
 
 here are author infos below:
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+[The css course learned from](https://youtu.be/OXGznpKZ_sA?si=KTPSZgU2-h7IHr_d).
 
-[the github repository of origin project ](https://github.com/gitdagray/css_course)
+[the github repository of origin project](https://github.com/gitdagray/css_course)
 
