@@ -1,15 +1,22 @@
-// router.ts
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('@/views/MyPage.vue'),
-    meta: {
-      title: 'Home',
-    },
+    component: () => import('@/views/Home.vue'),
+  },
+  {
+    path: '/hours',
+    component: () => import('@/views/Hours.vue'),
+  },
+  {
+    path: '/contact',
+    component: () => import('@/views/Contact.vue'),
+  },
+  {
+    path: '/about',
+    component: () => import('@/views/About.vue'),
   },
 ]
 
