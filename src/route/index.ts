@@ -23,6 +23,24 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to) {
+    // Check if the target route has a hash (e.g., "#menu")
+    if (to.hash) {
+      // Return a promise to scroll to the target element with smooth behavior
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const targetElement = document.querySelector(to.hash)
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' })
+          }
+          resolve()
+        }, 100)
+      })
+    }
+
+    // For non-hash routes, scroll to the top
+    return { top: 0 }
+  },
 })
 
 export default router

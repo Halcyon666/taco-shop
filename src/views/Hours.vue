@@ -1,31 +1,33 @@
 <template>
-  <article id="menu" class="main__article menu">
-    <h2 class="menu__h2">Our Menu</h2>
-    <table class="menu__container">
-      <caption class="offscreen">
-        Our Tacos
-      </caption>
-      <thead>
-        <tr>
-          <th class="menu__header" scope="col">Tacos</th>
-          <th class="menu__header" scope="col">Quantity</th>
-          <th class="menu__header" scope="col">Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Your menu items here -->
-      </tbody>
-      <tfoot>
-        <tr>
-          <td class="menu__item menu__cs" colspan="3">Chips &amp; Salsa $2</td>
-        </tr>
-      </tfoot>
-    </table>
+  <section class="hero">
+    <figure>
+      <img
+        src="@/assets/img/tacos_tray_1000x667.png"
+        alt="A Tray of Tasty Tacos"
+        title="We love trays of tacos!"
+        width="1000"
+        height="667"
+      />
+      <figcaption class="offscreen">A Tray of Tasty Tacos</figcaption>
+    </figure>
+  </section>
 
-    <p class="center">
-      <a href="#">Back To Top</a>
-    </p>
-  </article>
+  <main class="main">
+    <article class="main__article">
+      <h2>Hours</h2>
+      <p>We are open 7 days a week!</p>
+      <dl>
+        <dt>Sunday-Thursday</dt>
+        <dd>11am-9pm</dd>
+        <dt>Friday-Saturday</dt>
+        <dd>11am-11pm</dd>
+      </dl>
+    </article>
+  </main>
+
+  <p class="center">
+    <a href="#">Back To Top</a>
+  </p>
 </template>
 
 <script setup>

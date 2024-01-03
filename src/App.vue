@@ -1,29 +1,42 @@
 <template>
   <div id="app">
-    <div class="header__h1">Little Taco Shop</div>
-    <div class="link">
-      <router-link to="/">Home</router-link>
-      <router-link to="/hours">Hours</router-link>
-      <router-link to="/contact">Contact</router-link>
-      <router-link to="/about">About</router-link>
+    <div class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
+      <div class="header__nav">
+        <div class="header__ul">
+          <router-link
+            :to="link.to"
+            v-for="link in links"
+            :key="link.to"
+            :class="{ hidden: link.hidden }"
+          >
+            {{ link.label }}
+          </router-link>
+        </div>
+      </div>
     </div>
 
     <router-view></router-view>
-    <div>Copyright © 2024 Little Taco Shop</div>
+    <div class="footer">Copyright © 2024 Little Taco Shop</div>
   </div>
 </template>
 
 <script setup>
-// Any setup logic if needed
+import { reactive } from 'vue'
+
+const links = reactive([
+  { to: '/', label: 'Home', hidden: false },
+  { to: '#menu', label: 'Menu', hidden: false },
+  { to: '/hours', label: 'Hours', hidden: false },
+  { to: '/contact', label: 'Contact', hidden: false },
+  { to: '/about', label: 'About', hidden: false },
+])
 </script>
 
 <style>
 @import '@/style/common.css';
 
-.link {
-  padding: var(--PADDING-TB) var(--PADDING-SIDE);
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
+.hidden {
+  display: none;
 }
 </style>

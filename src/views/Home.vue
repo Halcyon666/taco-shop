@@ -13,7 +13,7 @@
         <figcaption class="offscreen">Tacos and a Drink</figcaption>
       </figure>
     </section>
-    <Menu />
+    <Menu id="menu" />
   </div>
 </template>
 
