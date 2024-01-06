@@ -21,16 +21,37 @@
   </div>
 </template>
 
-<script setup>
-import { reactive } from 'vue'
+<script lang="ts" setup>
+import { ref, watch, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 
-const links = reactive([
+const route = useRoute()
+
+const links = ref([
   { to: '/', label: 'Home', hidden: false },
   { to: '#menu', label: 'Menu', hidden: false },
   { to: '/hours', label: 'Hours', hidden: false },
   { to: '/contact', label: 'Contact', hidden: false },
   { to: '/about', label: 'About', hidden: false },
 ])
+
+const updateButtonVisibility = () => {
+  links.value.forEach((link) => {
+    // this will only hidden current page
+    link.hidden = link.to === route.path
+  })
+}
+
+watch(
+  () => route.path,
+  () => {
+    updateButtonVisibility()
+  },
+)
+
+onMounted(() => {
+  updateButtonVisibility()
+})
 </script>
 
 <style>
