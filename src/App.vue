@@ -56,6 +56,7 @@ onMounted(() => {
 
 <style>
 @import '@/style/common.css';
+@import '@/style/output.css';
 
 .hidden {
   display: none;
