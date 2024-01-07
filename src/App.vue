@@ -29,7 +29,7 @@ const route = useRoute()
 
 const links = ref([
   { to: '/', label: 'Home', hidden: false },
-  { to: '#menu', label: 'Menu', hidden: false },
+  { to: '/#menu', label: 'Menu', hidden: false },
   { to: '/hours', label: 'Hours', hidden: false },
   { to: '/contact', label: 'Contact', hidden: false },
   { to: '/about', label: 'About', hidden: false },
