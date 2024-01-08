@@ -13,3 +13,13 @@ here are author infos below:
 [The css course learned from](https://youtu.be/OXGznpKZ_sA?si=KTPSZgU2-h7IHr_d).
 
 [the github repository of origin project](https://github.com/gitdagray/css_course)
+
+# usage
+
+```shell
+# install dependencies
+pnpm i
+# run dev
+pnpm dev
+```
+visit http://localhost:5174/
