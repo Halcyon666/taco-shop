@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
+      <link rel="icon" href="@/assets/favicon.ico" type="image/x-icon" />
       <h1 class="header__h1">Little Taco Shop</h1>
       <div class="header__nav">
         <div class="header__ul">
