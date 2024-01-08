@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import Menu from '@/components/Menu.vue'
 </script>
 

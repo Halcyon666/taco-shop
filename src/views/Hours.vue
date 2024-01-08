@@ -30,7 +30,7 @@
   </p>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 // You can import any dependencies or define variables here
 </script>
 
