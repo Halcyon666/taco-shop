@@ -1,24 +1,22 @@
 <template>
   <div>
-    <section class="hero">
-      <h2 class="hero__h2">Bienvenidos!</h2>
-      <figure>
-        <img
-          src="@/assets/img/tacos_and_drink_1000x667.png"
-          alt="Tacos and a Drink"
-          title="We love tacos!"
-          width="1000"
-          height="667"
-        />
-        <figcaption class="offscreen">Tacos and a Drink</figcaption>
-      </figure>
-    </section>
+    <HeroSection
+      title="Bienvenidos!"
+      imageSrc="src/assets/img/tacos_and_drink_1000x667.png"
+      imageAlt="Tacos and a Drink"
+      imageTitle="We love tacos!"
+      imageWidth="1000"
+      imageHeight="667"
+      imageCaption="Tacos and a Drink"
+    />
+
     <Menu id="menu" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import Menu from '@/components/Menu.vue'
+import HeroSection from '@/components/HeroSection.vue'
 </script>
 
 <style scoped>

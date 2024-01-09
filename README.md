@@ -22,4 +22,5 @@ pnpm i
 # run dev
 pnpm dev
 ```
+
 visit http://localhost:5174/

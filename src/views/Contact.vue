@@ -1,17 +1,13 @@
 <template>
   <div>
-    <section class="hero">
-      <figure>
-        <img
-          src="@/assets/img/tacos_close_up_1000x649.png"
-          alt="Little Taco Shop Tacos"
-          title="Tacos ready to eat!"
-          width="1000"
-          height="649"
-        />
-        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
-      </figure>
-    </section>
+    <HeroSection
+      imageSrc="src/assets/img/tacos_close_up_1000x649.png"
+      imageAlt="Little Taco Shop Tacos"
+      imageTitle="Tacos ready to eat!"
+      imageWidth="1000"
+      imageHeight="649"
+      imageCaption="Little Taco Shop Tacos"
+    />
 
     <main class="main">
       <article class="main__article">
@@ -74,7 +70,7 @@
 </template>
 
 <script lang="ts" setup>
-// You can import any dependencies or define variables here
+import HeroSection from '@/components/HeroSection.vue'
 </script>
 
 <style scoped>

@@ -1,37 +1,35 @@
 <template>
-  <section class="hero">
-    <figure>
-      <img
-        src="@/assets/img/tacos_tray_1000x667.png"
-        alt="A Tray of Tasty Tacos"
-        title="We love trays of tacos!"
-        width="1000"
-        height="667"
-      />
-      <figcaption class="offscreen">A Tray of Tasty Tacos</figcaption>
-    </figure>
-  </section>
+  <div>
+    <HeroSection
+      imageSrc="src/assets/img/tacos_tray_1000x667.png"
+      imageAlt="A Tray of Tasty Tacos"
+      imageTitle="We love trays of tacos!"
+      imageWidth="1000"
+      imageHeight="667"
+      imageCaption="A Tray of Tasty Tacos"
+    />
 
-  <main class="main">
-    <article class="main__article">
-      <h2>Hours</h2>
-      <p>We are open 7 days a week!</p>
-      <dl>
-        <dt>Sunday-Thursday</dt>
-        <dd>11am-9pm</dd>
-        <dt>Friday-Saturday</dt>
-        <dd>11am-11pm</dd>
-      </dl>
-    </article>
-  </main>
+    <main class="main">
+      <article class="main__article">
+        <h2>Hours</h2>
+        <p>We are open 7 days a week!</p>
+        <dl>
+          <dt>Sunday-Thursday</dt>
+          <dd>11am-9pm</dd>
+          <dt>Friday-Saturday</dt>
+          <dd>11am-11pm</dd>
+        </dl>
+      </article>
+    </main>
 
-  <p class="center">
-    <a href="#">Back To Top</a>
-  </p>
+    <p class="center">
+      <a href="#">Back To Top</a>
+    </p>
+  </div>
 </template>
 
 <script lang="ts" setup>
-// You can import any dependencies or define variables here
+import HeroSection from '@/components/HeroSection.vue'
 </script>
 
 <style scoped>

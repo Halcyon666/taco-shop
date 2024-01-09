@@ -57,7 +57,7 @@ onMounted(() => {
 
 <style>
 @import '@/style/common.css';
-@import '@/style/output.css';
+@import '@/style/tailwind.css';
 
 .hidden {
   display: none;
