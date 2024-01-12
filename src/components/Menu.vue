@@ -1,7 +1,7 @@
 <!-- MenuComponent.vue -->
 <template>
   <article id="menu" class="main__article menu">
-    <h2 class="menu__h2">Our Menu</h2>
+    <h2 class="pl-5">Our Menu</h2>
     <table class="menu__container">
       <caption class="offscreen">
         Our Tacos
@@ -13,7 +13,7 @@
             v-for="(item, index) in menuHeaders"
             :key="'menuheader' + index"
             scope="col"
-            class="menu__header"
+            class="menu__header w-full menu-item"
           >
             {{ item.content }}
           </th>
@@ -22,22 +22,22 @@
       <tbody>
         <!-- Crunchy -->
         <tr v-for="(item, index) in crunchyItems" :key="'crunchy' + index">
-          <th class="menu__item menu__cr" scope="row">Crunchy</th>
-          <td class="menu__item">{{ item.quantity }}</td>
-          <td class="menu__item">{{ item.price }}</td>
+          <th class="w-full menu-item menu__cr" scope="row">Crunchy</th>
+          <td class="w-full menu-item">{{ item.quantity }}</td>
+          <td class="w-full menu-item">{{ item.price }}</td>
         </tr>
         <!-- Soft -->
         <tr v-for="(item, index) in softItems" :key="'soft' + index">
-          <th class="menu__item menu__sf" scope="row">Soft</th>
-          <td class="menu__item">{{ item.quantity }}</td>
-          <td class="menu__item">{{ item.price }}</td>
+          <th class="w-full menu-item menu__sf" scope="row">Soft</th>
+          <td class="w-full menu-item">{{ item.quantity }}</td>
+          <td class="w-full menu-item">{{ item.price }}</td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td class="menu__item menu__cs" colspan="3">Chips &amp; Salsa $2</td>
-        </tr>
-      </tfoot>
+      <tr>
+        <td class="w-full menu-item menu__cs rounded-bl-[15px] rounded-br-[15px]" colspan="3">
+          Chips &amp; Salsa $2
+        </td>
+      </tr>
     </table>
 
     <p class="center">
@@ -66,7 +66,7 @@ const softItems = [
 /* || MENU */
 thead,
 tbody,
-tfoot,
+/* tfoot, */
 tr {
   display: contents;
 }
@@ -112,17 +112,17 @@ tr {
   place-content: center;
 }
 
-.menu__header,
-.menu__item {
+/* .menu__header ,
+.menu__item{
   width: 100%;
   padding: 1em;
   border: medium ridge var(--BORDER-COLOR);
-}
+} */
 
-.menu__item {
+/* .menu__item{
   display: grid;
   place-content: center;
-}
+} */
 
 thead th:first-child {
   border-top-left-radius: var(--BORDER-RADIUS);
@@ -132,12 +132,12 @@ thead th:last-child {
   border-top-right-radius: var(--BORDER-RADIUS);
 }
 
-tfoot td {
+/* tfoot td {
   border-bottom-left-radius: var(--BORDER-RADIUS);
   border-bottom-right-radius: var(--BORDER-RADIUS);
-}
+}  */
 
-.menu__h2 {
+/* .menu__h2 {
   padding-left: 20px;
-}
+} */
 </style>
