@@ -5,9 +5,7 @@
 
 
 @layer components {
-    .app {
-        @apply bg-[var(--BODY-BGCOLOR)] text-[var(--FONT-COLOR)] min-h-screen max-w-[800px] mx-auto border-l border-r border-solid border-[var(--BORDER-COLOR)] shadow-custom
-    }
+
     .menu-item {
         @apply w-full p-4 border-[medium] border-r-[ridge] border-[var(--BORDER-COLOR)] grid place-content-center;
     }
