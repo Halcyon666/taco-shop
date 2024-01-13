@@ -21,10 +21,6 @@
         </dl>
       </article>
     </main>
-
-    <p class="center">
-      <a href="#">Back To Top</a>
-    </p>
   </div>
 </template>
 
