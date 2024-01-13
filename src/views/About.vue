@@ -12,7 +12,7 @@
 
     <main class="main">
       <article id="about" class="main__article about">
-        <h2>About</h2>
+        <h2 h2-style>About</h2>
         <p>
           <abbr title="Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our
           shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a

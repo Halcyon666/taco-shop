@@ -1,8 +1,11 @@
 <!-- MenuComponent.vue -->
 <template>
   <article id="menu" class="main__article menu">
-    <h2 class="pl-5">Our Menu</h2>
+    <h2 class="pl-5 h2-style">Our Menu</h2>
     <table class="grid grid-cols-3 grid-rows-8 gap-0.1em mb-4 ml-5 mr-5">
+      <caption class="off-screen">
+        Our Tacos
+      </caption>
       <!-- MenuHeader -->
       <thead class="contents">
         <th

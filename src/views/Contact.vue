@@ -11,7 +11,7 @@
 
     <main class="main">
       <article class="main__article">
-        <h2>Our Location</h2>
+        <h2 h2-style>Our Location</h2>
         <address>
           555 Taco Temptation Lane, Suite T<br />
           Kansas City, MO 55555-5555
@@ -21,11 +21,11 @@
       </article>
       <hr />
       <article class="main__article contact">
-        <h2 class="contact__h2">Our Contact Form</h2>
+        <h2 class="contact__h2 h2-style">Our Contact Form</h2>
 
         <form action="https://httpbin.org/get" method="get" class="contact__form">
           <fieldset class="contact__fieldset">
-            <legend class="offscreen">Send Us A Message</legend>
+            <legend class="off-screen">Send Us A Message</legend>
             <p class="contact__p">
               <label class="contact__label" for="name">Name:</label>
               <input

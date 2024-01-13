@@ -11,7 +11,7 @@
 
     <main class="main">
       <article class="main__article">
-        <h2>Hours</h2>
+        <h2 h2-style>Hours</h2>
         <p>We are open 7 days a week!</p>
         <dl>
           <dt>Sunday-Thursday</dt>

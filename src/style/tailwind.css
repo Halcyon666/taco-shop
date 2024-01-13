@@ -11,4 +11,10 @@
     .menu-item-highlight {
         @apply text-[var(--HIGHLIGHT-COLOR)] font-bold h-full place-content-center;
     }
+    .h2-style {
+        @apply font-headings tracking-wide mb-4 text-[var(--HIGHLIGHT-COLOR)]
+    }
+    .off-screen {
+        @apply absolute left-off
+    }
 }

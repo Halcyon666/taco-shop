@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <h2 class="hero__h2">{{ title }}</h2>
+    <h2 class="hero__h2 h2-style">{{ title }}</h2>
     <figure>
       <img
         :src="imageSrc"
@@ -9,7 +9,7 @@
         :width="imageWidth"
         :height="imageHeight"
       />
-      <figcaption class="offscreen">{{ imageCaption }}</figcaption>
+      <figcaption class="off-screen">{{ imageCaption }}</figcaption>
     </figure>
   </section>
 </template>
