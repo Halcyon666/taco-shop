@@ -95,16 +95,6 @@ html {
   background-image: var(--BGIMAGE);
 }
 
-body {
-  background-color: var(--BODY-BGCOLOR);
-  color: var(--FONT-COLOR);
-  min-height: 100vh;
-  max-width: 800px;
-  margin: 0 auto;
-  border-left: var(--BORDERS);
-  border-right: var(--BORDERS);
-  box-shadow: 0 0 10px var(--BORDER-COLOR);
-}
 
 h1,
 /* h2, */

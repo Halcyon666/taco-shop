@@ -7,8 +7,11 @@ export default {
       fontFamily: {
         headings: ['Fugaz One', 'cursive'],
       },
-      spacing: {
-        off: '-10000px',
+      borderWidth: {
+        DEFAULT: '1px',
+      },
+      boxShadow: {
+        custom: '0 0 10px var(--BORDER-COLOR)',
       },
     },
   },
