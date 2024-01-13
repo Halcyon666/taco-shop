@@ -5,11 +5,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        content: ['Nunito', 'sans-serif'],
         headings: ['Fugaz One', 'cursive'],
       },
-      borderWidth: {
+      /*     borderWidth: {
         DEFAULT: '1px',
-      },
+      }, */
       boxShadow: {
         custom: '0 0 10px var(--BORDER-COLOR)',
       },

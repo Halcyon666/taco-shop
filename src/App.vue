@@ -1,8 +1,5 @@
 <template class="margin: 0 auto">
-  <div
-    id="app"
-    class="bg-[var(--BODY-BGCOLOR)] text-[var(--FONT-COLOR)] min-h-screen max-w-[800px] mx-auto border-l border-r border-solid border-[var(--BORDER-COLOR)] shadow-custom"
-  >
+  <div id="app" class="app">
     <div class="header">
       <h1 class="header__h1">Little Taco Shop</h1>
       <div class="header__nav">

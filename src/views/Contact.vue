@@ -61,8 +61,10 @@
               ></textarea>
             </p>
           </fieldset>
-          <button class="contact__button" type="submit">Send</button>
-          <button class="contact__button" type="reset">Reset</button>
+          <div class="space-x-4">
+            <button class="custom-button" type="submit">Send</button>
+            <button class="custom-button" type="reset">Reset</button>
+          </div>
         </form>
       </article>
     </main>

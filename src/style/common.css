@@ -255,6 +255,8 @@ a:active {
   border-radius: var(--BORDER-RADIUS);
   border-width: 2px;
   width: 100%;
+  color: black;
+  border-color: var(--BORDER-COLOR);
 }
 
 .contact__button {
