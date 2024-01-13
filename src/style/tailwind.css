@@ -5,26 +5,32 @@
 
 
 @layer components {
+
+    /* Page base element */
     .app {
         @apply bg-[var(--BODY-BGCOLOR)] text-[var(--FONT-COLOR)] min-h-screen max-w-[800px] mx-auto border-l border-r border-solid border-[var(--BORDER-COLOR)] shadow-custom
     }
 
+    /* menu */
     .menu-item {
-        @apply w-full p-4 border-2 border-[var(--BORDER-COLOR)] grid place-content-center;
+        @apply w-full p-4 border-2 border-[var(--BORDER-COLOR)] grid place-content-center
     }
 
     .menu-item-highlight {
-        @apply text-[var(--HIGHLIGHT-COLOR)] font-bold h-full place-content-center;
+        @apply text-[var(--HIGHLIGHT-COLOR)] font-bold h-full place-content-center
     }
 
+    /* h2 */
     .h2-style {
         @apply font-headings tracking-wide mb-4 text-[var(--HERO-COLOR)] text-2xl
     }
 
+    /* off screen */
     .off-screen {
         @apply absolute left-[-10000px]
     }
 
+    /* button */
     .custom-button {
         @apply p-1 rounded-[15px] bg-[var(--HIGHLIGHT-COLOR)] text-[var(--BUTTON-COLOR)] font-bold
     }

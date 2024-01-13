@@ -1,5 +1,11 @@
 <template class="margin: 0 auto">
   <div id="app" class="app">
+    <button
+      @click="toggleDark()"
+      class="button bg-red-500 text-zinc-950 dark:bg-orange-950 dark:text-gray-100"
+    >
+      theme {{ isDark }}
+    </button>
     <div class="header">
       <h1 class="header__h1">Little Taco Shop</h1>
       <div class="header__nav">
@@ -24,6 +30,10 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useDark, useToggle } from '@vueuse/core'
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 
 const route = useRoute()
 
@@ -55,9 +65,6 @@ onMounted(() => {
 </script>
 
 <style>
-@import '@/style/common.css';
-@import '@/style/tailwind.css';
-
 .hidden {
   display: none;
 }
