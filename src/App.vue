@@ -45,12 +45,35 @@ import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDark, useToggle } from '@vueuse/core'
 
+// THEME
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+// support all the theme change, respect system preference first ,
+// also can change by toggle button
+const changeTheme = () => {
+  // Set the initial theme on page load
+  if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
 
+  // Explicitly choose light mode
+  localStorage.theme = 'light'
+
+  // Explicitly choose dark mode
+  localStorage.theme = 'dark'
+
+  // Respect OS preference
+  localStorage.removeItem('theme')
+}
+
+// LINK DATAS
 const route = useRoute()
 const pageTitle = ref('Little Taco Shop')
-
 const links = ref([
   { to: '/', label: 'Home', hidden: false },
   { to: '/#menu', label: 'Menu', hidden: false },
@@ -59,13 +82,14 @@ const links = ref([
   { to: '/about', label: 'About', hidden: false },
 ])
 
+// BYNAMIC DISPLAY LINKS
 const updateButtonVisibility = () => {
   links.value.forEach((link) => {
     // this will only hidden current page
     link.hidden = link.to === route.path
   })
 }
-
+// DYNAMIC PAGE TITLE
 const updatePageTitle = () => {
   const currentLink = links.value.find((link) => link.to === route.path)
   pageTitle.value = currentLink ? `Taco-${currentLink.label}` : 'Little Taco Shop'
@@ -82,11 +106,8 @@ watch(
 
 onMounted(() => {
   updateButtonVisibility()
+  changeTheme()
 })
 </script>
 
-<style>
-.hidden {
-  display: none;
-}
-</style>
+<style></style>

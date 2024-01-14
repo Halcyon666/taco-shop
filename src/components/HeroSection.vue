@@ -1,9 +1,9 @@
 <template>
-  <section class="hero">
+  <section class="relative">
     <!-- here dynamic hero__h2 style and hidden when not at home page -->
     <h2
       :class="{ hero__h2: title === 'Bienvenidos!', hidden: title !== 'Bienvenidos!' }"
-      class="h2-style text-black"
+      class="h2-style"
     >
       {{ title }}
     </h2>
@@ -33,10 +33,6 @@ defineProps([
 </script>
 
 <style scoped>
-.hero {
-  position: relative;
-}
-
 .hero__h2 {
   background-color: var(--HERO-BGCOLOR);
   color: var(--HERO-COLOR);

@@ -30,11 +30,17 @@
         @apply absolute left-[-10000px]
     }
 
-    /* button */
-    .custom-button {
-        @apply p-1 rounded-[15px] bg-[var(--HIGHLIGHT-COLOR)] text-[var(--BUTTON-COLOR)] font-bold
+    .font-inherit {
+        @apply font-content font-[var(--FS)]
     }
 
+    .input-content {
+        @apply p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-[whitesmoke] border-[#333]
+    }
+
+    .contact-button {
+        @apply p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-[whitesmoke] text-white dark:text-black
+    }
 }
 
 @layer utilities {

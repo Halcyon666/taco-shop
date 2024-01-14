@@ -30,7 +30,7 @@
             <p class="contact__p">
               <label class="contact__label" for="name">Name:</label>
               <input
-                class="contact__input"
+                class="input-content font-inherit"
                 type="text"
                 name="name"
                 id="name"
@@ -41,7 +41,7 @@
             <p class="contact__p">
               <label class="contact__label" for="email">Email:</label>
               <input
-                class="contact__input"
+                class="input-content font-inherit"
                 type="email"
                 name="email"
                 id="email"
@@ -53,7 +53,7 @@
               <label class="contact__label" for="message">Your Message:</label>
               <br />
               <textarea
-                class="contact__textarea"
+                class="input-content font-inherit"
                 name="message"
                 id="message"
                 cols="30"
@@ -63,8 +63,8 @@
             </p>
           </fieldset>
           <div class="space-x-4">
-            <button class="custom-button" type="submit">Send</button>
-            <button class="custom-button" type="reset">Reset</button>
+            <button class="contact-button font-inherit" type="submit">Send</button>
+            <button class="contact-button font-inherit" type="reset">Reset</button>
           </div>
         </form>
       </article>
