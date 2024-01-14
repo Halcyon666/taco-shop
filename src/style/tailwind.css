@@ -6,23 +6,27 @@
 
 @layer components {
 
+    .custom-border-color {
+        @apply dark:border-border-dark border-border-light
+    }
+
     /* Page base element */
     .app {
-        @apply bg-[var(--BODY-BGCOLOR)] text-[var(--FONT-COLOR)] min-h-screen max-w-[800px] mx-auto border-l border-r border-solid border-[var(--BORDER-COLOR)] shadow-custom
+        @apply bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid custom-border-color shadow-custom
     }
 
     /* menu */
     .menu-item {
-        @apply w-full p-4 border-2 border-[var(--BORDER-COLOR)] grid place-content-center
+        @apply w-full p-4 border-2 custom-border-color grid place-content-center
     }
 
     .menu-item-highlight {
-        @apply text-[var(--HIGHLIGHT-COLOR)] font-bold h-full place-content-center
+        @apply text-highlight-light dark:text-highlight-dark font-bold h-full place-content-center
     }
 
     /* h2 */
     .h2-style {
-        @apply font-headings tracking-wide mb-4 text-[var(--HERO-COLOR)] text-2xl
+        @apply font-content tracking-wide mb-4 text-hero-light dark:text-hero-dark text-2xl
     }
 
     /* off screen */
@@ -35,19 +39,10 @@
     }
 
     .input-content {
-        @apply p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-[whitesmoke] border-[#333]
+        @apply p-[0.5em] rounded-[15px] border-[2px] w-full text-black custom-border-color
     }
 
     .contact-button {
-        @apply p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-[whitesmoke] text-white dark:text-black
+        @apply p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black
     }
-}
-
-@layer utilities {
-
-    /* thme utilities */
-    .theme-button {
-        @apply bg-red-500 text-zinc-950 dark:bg-orange-950 dark:text-gray-100
-    }
-
 }

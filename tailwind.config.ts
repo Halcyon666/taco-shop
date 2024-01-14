@@ -9,9 +9,28 @@ export default {
         content: ['Nunito', 'sans-serif'],
         headings: ['Fugaz One', 'cursive'],
       },
-      /*     borderWidth: {
-        DEFAULT: '1px',
-      }, */
+      colors: {
+        highlight: {
+          light: '#33b233',
+          dark: 'whitesmoke',
+        },
+        border: {
+          light: '#333',
+          dark: 'whitesmoke',
+        },
+        body: {
+          light: '#fff',
+          dark: '#333',
+        },
+        font: {
+          light: '#000',
+          dark: 'whitesmoke',
+        },
+        hero: {
+          light: '#fff',
+          dark: '#333',
+        },
+      },
       boxShadow: {
         custom: '0 0 10px var(--BORDER-COLOR)',
       },
