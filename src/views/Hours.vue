@@ -1,6 +1,7 @@
 <template>
   <div>
     <HeroSection
+      title="hours"
       imageSrc="src/assets/img/tacos_tray_1000x667.png"
       imageAlt="A Tray of Tasty Tacos"
       imageTitle="We love trays of tacos!"

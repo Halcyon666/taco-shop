@@ -1,6 +1,7 @@
 <template>
   <div>
     <HeroSection
+      title="contact"
       imageSrc="src/assets/img/tacos_close_up_1000x649.png"
       imageAlt="Little Taco Shop Tacos"
       imageTitle="Tacos ready to eat!"

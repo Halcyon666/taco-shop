@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection
-      title="Tacos Delicioso"
+      title="about"
       imageSrc="src/assets/img/tacos_delicioso_1000x667.png"
       imageAlt="Tacos Delicioso"
       imageTitle="Tacos Delicioso!"
@@ -19,7 +19,9 @@
           unique and interesting place to our little town.
         </p>
         <aside class="about__trivia">
-          <h3>Taco Trivia</h3>
+          <div class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-[whitesmoke]">
+            Taco Trivia
+          </div>
           <details>
             <summary>When did tacos first appear in the United States?</summary>
             <p class="about__trivia-answer">

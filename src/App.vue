@@ -1,19 +1,17 @@
-<template class="margin: 0 auto">
+<template>
   <div id="app" class="app">
     <div class="sticky z-[1] top-0">
-      <div class="flex content-center">
-        <h1
-          class="text-center text-[37.0304px] mx-auto w-full bg-black text-white py-[9.258px] px-[19.950px]"
-        >
+      <div class="flex bg-black px-[19.950px] py-[9.258px]">
+        <div class="text-center text-[37.0304px] font-headings mx-auto w-full text-white">
           🌮 Little Taco Shop 🌮
-        </h1>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-[30px] bg-black text-fuchsia-700 py-[9.258px]"
+          class="w-6 text-fuchsia-700"
           @click="toggleDark()"
         >
           <path
@@ -51,6 +49,7 @@ const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 const route = useRoute()
+const pageTitle = ref('Little Taco Shop')
 
 const links = ref([
   { to: '/', label: 'Home', hidden: false },
@@ -67,10 +66,17 @@ const updateButtonVisibility = () => {
   })
 }
 
+const updatePageTitle = () => {
+  const currentLink = links.value.find((link) => link.to === route.path)
+  pageTitle.value = currentLink ? `Taco-${currentLink.label}` : 'Little Taco Shop'
+  document.title = pageTitle.value
+}
+
 watch(
   () => route.path,
   () => {
     updateButtonVisibility()
+    updatePageTitle()
   },
 )
 
