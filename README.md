@@ -1,4 +1,4 @@
-# Intruduce
+# Introduce
 
 this repository use vue3 + ts + tailwind, finish a simple page 🌮taco shop,
 
