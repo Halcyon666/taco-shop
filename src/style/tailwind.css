@@ -34,4 +34,14 @@
     .custom-button {
         @apply p-1 rounded-[15px] bg-[var(--HIGHLIGHT-COLOR)] text-[var(--BUTTON-COLOR)] font-bold
     }
+
+}
+
+@layer utilities {
+
+    /* thme utilities */
+    .theme-button {
+        @apply bg-red-500 text-zinc-950 dark:bg-orange-950 dark:text-gray-100
+    }
+
 }

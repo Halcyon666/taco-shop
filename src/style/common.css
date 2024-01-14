@@ -128,18 +128,18 @@ a:active {
 
 /* || HEADER */
 
-.header {
+/* .header {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
-.header__h1 {
+ */
+/* .header__h1 {
   text-align: center;
   background-color: var(--HEADER-BGCOLOR);
   color: var(--HEADER-COLOR);
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
-}
+} */
 
 .header__nav {
   background-color: var(--NAV-BGCOLOR);
@@ -267,7 +267,7 @@ a:active {
   font-weight: bold;
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .header__h1::before {
     content: '🌮 ';
   }
@@ -283,7 +283,7 @@ a:active {
     font-size: 125%;
   }
 }
-
+ */
 /* || HERO */
 
 .hero {

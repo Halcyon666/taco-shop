@@ -1,13 +1,28 @@
 <template class="margin: 0 auto">
   <div id="app" class="app">
-    <button
-      @click="toggleDark()"
-      class="button bg-red-500 text-zinc-950 dark:bg-orange-950 dark:text-gray-100"
-    >
-      theme {{ isDark }}
-    </button>
-    <div class="header">
-      <h1 class="header__h1">Little Taco Shop</h1>
+    <div class="sticky z-[1] top-0">
+      <div class="flex content-center">
+        <h1
+          class="text-center text-[37.0304px] mx-auto w-full bg-black text-white py-[9.258px] px-[19.950px]"
+        >
+          🌮 Little Taco Shop 🌮
+        </h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-[30px] bg-black text-fuchsia-700 py-[9.258px]"
+          @click="toggleDark()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+          />
+        </svg>
+      </div>
       <div class="header__nav">
         <div class="header__ul">
           <router-link
