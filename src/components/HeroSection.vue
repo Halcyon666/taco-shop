@@ -1,12 +1,12 @@
 <template>
   <section class="relative">
     <!-- here dynamic hero__h2 style and hidden when not at home page -->
-    <h2
+    <div
       :class="{ hero__h2: title === 'Bienvenidos!', hidden: title !== 'Bienvenidos!' }"
       class="h2-style"
     >
       {{ title }}
-    </h2>
+    </div>
     <figure>
       <img
         :src="imageSrc"
@@ -14,6 +14,7 @@
         :title="imageTitle"
         :width="imageWidth"
         :height="imageHeight"
+        class="block max-w-full h-auto"
       />
       <figcaption class="off-screen">{{ imageCaption }}</figcaption>
     </figure>

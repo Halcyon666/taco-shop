@@ -10,21 +10,19 @@
       imageCaption="Try these Delicious Tacos"
     />
 
-    <main class="main">
+    <main class="px-[0.25em] py-2.5">
       <article id="about" class="main__article about">
-        <h2 h2-style>About</h2>
+        <h2 class="h2-style">About LTS</h2>
         <p>
           <abbr title="Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our
           shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a
           unique and interesting place to our little town.
         </p>
-        <aside class="about__trivia">
-          <div class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-[whitesmoke]">
-            Taco Trivia
-          </div>
+        <aside class="m-[var(--MARGIN)]">
+          <div class="font-headings tracking-widest mb-4 text-highligh">Taco Trivia</div>
           <details>
             <summary>When did tacos first appear in the United States?</summary>
-            <p class="about__trivia-answer">
+            <p class="mt-4">
               Jeffrey M. Pilcher, taco historian and professor of history at the University of
               Minnesota, says the earliest mention of tacos in the United States are in a newspaper
               from <time datetime="1905">1905</time>. (Source:

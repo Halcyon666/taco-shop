@@ -11,8 +11,8 @@
     />
 
     <main class="main">
-      <article class="main__article">
-        <h2 h2-style>Hours</h2>
+      <article class="main__article mx-[1em]">
+        <h2 class="h2-style">Hours</h2>
         <p>We are open 7 days a week!</p>
         <dl>
           <dt>Sunday-Thursday</dt>

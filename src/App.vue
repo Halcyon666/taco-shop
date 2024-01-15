@@ -21,7 +21,9 @@
           />
         </svg>
       </div>
-      <div class="header__nav">
+      <div
+        class="bg-white dark:bg-[#141414] border-b custom-border-color font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
+      >
         <div class="header__ul">
           <router-link
             :to="link.to"
@@ -36,7 +38,13 @@
     </div>
 
     <router-view></router-view>
-    <div class="footer">Copyright © 2024 Little Taco Shop</div>
+
+    <footer class="sticky bottom-0 bg-black text-center text-white p-[0.25em] h-8">
+      <p class="leading-6">
+        <span class="whitespace-nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="whitespace-nowrap">Little Taco Shop</span>
+      </p>
+    </footer>
   </div>
 </template>
 

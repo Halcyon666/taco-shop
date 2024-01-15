@@ -35,8 +35,6 @@
         Chips &amp; Salsa $2
       </td>
     </table>
-
-    <a href="#" class="block text-center mx-auto">Back To Top</a>
   </article>
 </template>
 

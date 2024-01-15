@@ -11,6 +11,8 @@
     />
 
     <Menu id="menu" />
+
+    <a href="#" class="block text-center mx-auto">Back To Top</a>
   </div>
 </template>
 

@@ -32,7 +32,8 @@ export default {
         },
       },
       boxShadow: {
-        custom: '0 0 10px var(--BORDER-COLOR)',
+        light: '0 0 10px #333',
+        dark: '0 0 10px whitesmoke',
       },
     },
   },

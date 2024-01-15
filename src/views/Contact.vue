@@ -12,8 +12,8 @@
 
     <main class="main">
       <article class="main__article">
-        <h2 h2-style>Our Location</h2>
-        <address>
+        <h2 class="h2-style mx-[1em]">Our Location</h2>
+        <address class="mx-[1em]">
           555 Taco Temptation Lane, Suite T<br />
           Kansas City, MO 55555-5555
           <br /><br />
@@ -22,13 +22,13 @@
       </article>
       <hr />
       <article class="main__article contact">
-        <h2 class="contact__h2 h2-style">Our Contact Form</h2>
+        <h2 class="mx-[1em] h2-style">Our Contact Form</h2>
 
         <form action="https://httpbin.org/get" method="get" class="contact__form">
-          <fieldset class="contact__fieldset">
+          <fieldset class="border-none">
             <legend class="off-screen">Send Us A Message</legend>
-            <p class="contact__p">
-              <label class="contact__label" for="name">Name:</label>
+            <p class="mx-[1em] my-0">
+              <label class="block font-bold" for="name">Name:</label>
               <input
                 class="input-content font-inherit"
                 type="text"
@@ -38,8 +38,8 @@
                 required
               />
             </p>
-            <p class="contact__p">
-              <label class="contact__label" for="email">Email:</label>
+            <p class="mx-[1em] my-0">
+              <label class="block font-bold" for="email">Email:</label>
               <input
                 class="input-content font-inherit"
                 type="email"
@@ -49,8 +49,8 @@
                 required
               />
             </p>
-            <p class="contact__p">
-              <label class="contact__label" for="message">Your Message:</label>
+            <p class="mx-[1em] my-0">
+              <label class="block font-bold" for="message">Your Message:</label>
               <br />
               <textarea
                 class="input-content font-inherit"
@@ -62,7 +62,7 @@
               ></textarea>
             </p>
           </fieldset>
-          <div class="space-x-4">
+          <div class="space-x-4 mx-[1em]">
             <button class="contact-button font-inherit" type="submit">Send</button>
             <button class="contact-button font-inherit" type="reset">Reset</button>
           </div>

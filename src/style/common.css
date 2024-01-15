@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
 
-/* || RESET */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* || VARIABLES */
-
 :root {
   /* FONTS */
   --FF: 'Nunito', sans-serif;
@@ -67,16 +51,8 @@ img {
     --LINK-ACTIVE: rgb(252, 200, 103);
     --LINK-COLOR: whitesmoke;
     --LINK-HOVER: orange;
-    --NAV-BGCOLOR: rgb(20, 20, 20);
+    --NAV-BGCOLOR: #141414;
   }
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.center {
-  text-align: center;
 }
 
 /* || GENERAL STYLES */
@@ -87,10 +63,6 @@ html {
   font-family: var(--FF);
   background-color: var(--BGCOLOR);
   background-image: var(--BGIMAGE);
-}
-
-p {
-  line-height: 1.5;
 }
 
 a:any-link {
@@ -106,13 +78,6 @@ a:active {
   color: var(--LINK-ACTIVE);
 }
 
-.header__nav {
-  background-color: var(--NAV-BGCOLOR);
-  border-bottom: var(--BORDERS);
-  font-weight: bold;
-  box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
-}
-
 .header__ul {
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
   list-style-type: none;
@@ -121,25 +86,7 @@ a:active {
   gap: 1rem;
 }
 
-/* || HERO */
-
-
-/* || FOOTER */
-
-.footer {
-  position: sticky;
-  bottom: 0;
-  background-color: var(--HEADER-BGCOLOR);
-  color: var(--HEADER-COLOR);
-  padding: var(--PADDING-TB) var(--PADDING-SIDE);
-  text-align: center;
-}
-
 /* || MAIN */
-
-.main {
-  padding: var(--PADDING-TB) var(--PADDING-SIDE);
-}
 
 .main__article {
   scroll-margin-top: 6.5rem;
@@ -154,32 +101,4 @@ a:active {
   min-height: calc(100vh - 20rem);
 }
 
-/* || ABOUT */
-
-.about__trivia {
-  margin: var(--MARGIN);
-}
-
-.about__trivia-answer {
-  margin-top: 1em;
-}
-
-/* || CONTACT */
-
-.contact__h2 {
-  margin: 0;
-}
-
-.contact__fieldset {
-  border: none;
-}
-
-.contact__p {
-  margin: 1em 0;
-}
-
-.contact__label {
-  display: block;
-  font-weight: bold;
-}
 

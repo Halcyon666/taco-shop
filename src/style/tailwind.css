@@ -1,10 +1,11 @@
+@import './common.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
 
 
 @layer components {
+
 
     .custom-border-color {
         @apply dark:border-border-dark border-border-light
@@ -12,21 +13,24 @@
 
     /* Page base element */
     .app {
-        @apply bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid custom-border-color shadow-custom
+        @apply bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid custom-border-color shadow-light dark:shadow-dark
     }
 
     /* menu */
     .menu-item {
         @apply w-full p-4 border-2 custom-border-color grid place-content-center
     }
+    .text-highligh {
+        @apply text-highlight-light dark:text-highlight-dark
+    }
 
     .menu-item-highlight {
-        @apply text-highlight-light dark:text-highlight-dark font-bold h-full place-content-center
+        @apply text-highligh font-bold h-full place-content-center
     }
 
     /* h2 */
     .h2-style {
-        @apply font-content tracking-wide mb-4 text-hero-light dark:text-hero-dark text-2xl
+        @apply font-headings tracking-wide mb-4 text-highligh text-2xl
     }
 
     /* off screen */
