@@ -13,7 +13,7 @@
     <main class="main">
       <article class="main__article mx-[1em]">
         <h2
-          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl"
         >
           Hours
         </h2>

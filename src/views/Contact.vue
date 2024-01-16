@@ -13,7 +13,7 @@
     <main class="main">
       <article class="main__article">
         <h2
-          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl mx-[1em]"
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl mx-[1em]"
         >
           Our Location
         </h2>
@@ -27,7 +27,7 @@
       <hr />
       <article class="main__article contact">
         <h2
-          class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+          class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl"
         >
           Our Contact Form
         </h2>
@@ -38,7 +38,7 @@
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="name">Name:</label>
               <input
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 type="text"
                 name="name"
                 id="name"
@@ -49,7 +49,7 @@
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="email">Email:</label>
               <input
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 type="email"
                 name="email"
                 id="email"
@@ -61,7 +61,7 @@
               <label class="block font-bold" for="message">Your Message:</label>
               <br />
               <textarea
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 name="message"
                 id="message"
                 cols="30"
@@ -72,13 +72,13 @@
           </fieldset>
           <div class="space-x-4 mx-[1em]">
             <button
-              class="p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
               type="submit"
             >
               Send
             </button>
             <button
-              class="p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
               type="reset"
             >
               Reset

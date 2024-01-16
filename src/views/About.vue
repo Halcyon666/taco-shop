@@ -13,7 +13,7 @@
     <main class="px-[0.25em] py-2.5">
       <article id="about" class="main__article about">
         <h2
-          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl"
         >
           About LTS
         </h2>
@@ -24,7 +24,7 @@
         </p>
         <aside class="m-[var(--MARGIN)]">
           <div
-            class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark"
+            class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-white dark:text-white"
           >
             Taco Trivia
           </div>

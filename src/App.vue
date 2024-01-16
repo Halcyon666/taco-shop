@@ -1,7 +1,7 @@
 <template>
   <div
     id="app"
-    class="bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid dark:border-border-dark border-border-light shadow-light dark:shadow-dark"
+    class="bg-[#fff] dark:bg-[#333] text-[#000] dark:text-white min-h-screen max-w-[800px] mx-auto border-l border-r border-solid dark:border-white border-[#333] shadow-light dark:shadow-dark"
   >
     <div class="sticky z-[1] top-0">
       <div class="flex bg-black px-[19.950px] py-[9.258px]">
@@ -25,7 +25,7 @@
         </svg>
       </div>
       <div
-        class="bg-white dark:bg-[#141414] border-b dark:border-border-dark border-border-light font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
+        class="bg-white dark:bg-[#141414] border-b dark:border-white border-[#333] font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
       >
         <div class="px-[0.25em] py-[2.5%] list-none flex justify-evenly gap-4">
           <router-link

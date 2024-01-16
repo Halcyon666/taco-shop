@@ -42,14 +42,14 @@
     --BGCOLOR-FADE: gray;
     --BGCOLOR: #000;
     --BODY-BGCOLOR: #333;
-    --BORDER-COLOR: whitesmoke;
+    --BORDER-COLOR: white;
     --BUTTON-COLOR: #000;
-    --FONT-COLOR: whitesmoke;
-    --HEADER-COLOR: whitesmoke;
+    --FONT-COLOR: white;
+    --HEADER-COLOR: white;
     --HERO-COLOR: #333;
-    --HIGHLIGHT-COLOR: whitesmoke;
+    --HIGHLIGHT-COLOR: white;
     --LINK-ACTIVE: rgb(252, 200, 103);
-    --LINK-COLOR: whitesmoke;
+    --LINK-COLOR: white;
     --LINK-HOVER: orange;
     --NAV-BGCOLOR: #141414;
   }
