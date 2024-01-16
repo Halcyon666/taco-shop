@@ -12,14 +12,22 @@
 
     <main class="px-[0.25em] py-2.5">
       <article id="about" class="main__article about">
-        <h2 class="h2-style">About LTS</h2>
+        <h2
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+        >
+          About LTS
+        </h2>
         <p>
           <abbr title="Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time>. Our
           shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a
           unique and interesting place to our little town.
         </p>
         <aside class="m-[var(--MARGIN)]">
-          <div class="font-headings tracking-widest mb-4 text-highligh">Taco Trivia</div>
+          <div
+            class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark"
+          >
+            Taco Trivia
+          </div>
           <details>
             <summary>When did tacos first appear in the United States?</summary>
             <p class="mt-4">
@@ -44,7 +52,3 @@
 <script lang="ts" setup>
 import HeroSection from '@/components/HeroSection.vue'
 </script>
-
-<style scoped>
-/* Add your styles here */
-</style>

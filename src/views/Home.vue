@@ -20,5 +20,3 @@
 import Menu from '@/components/Menu.vue'
 import HeroSection from '@/components/HeroSection.vue'
 </script>
-
-<style scoped></style>

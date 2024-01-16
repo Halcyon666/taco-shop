@@ -12,7 +12,11 @@
 
     <main class="main">
       <article class="main__article mx-[1em]">
-        <h2 class="h2-style">Hours</h2>
+        <h2
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+        >
+          Hours
+        </h2>
         <p>We are open 7 days a week!</p>
         <dl>
           <dt>Sunday-Thursday</dt>
@@ -28,7 +32,3 @@
 <script lang="ts" setup>
 import HeroSection from '@/components/HeroSection.vue'
 </script>
-
-<style scoped>
-/* Add your styles here */
-</style>

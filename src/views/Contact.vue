@@ -12,7 +12,11 @@
 
     <main class="main">
       <article class="main__article">
-        <h2 class="h2-style mx-[1em]">Our Location</h2>
+        <h2
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl mx-[1em]"
+        >
+          Our Location
+        </h2>
         <address class="mx-[1em]">
           555 Taco Temptation Lane, Suite T<br />
           Kansas City, MO 55555-5555
@@ -22,15 +26,19 @@
       </article>
       <hr />
       <article class="main__article contact">
-        <h2 class="mx-[1em] h2-style">Our Contact Form</h2>
+        <h2
+          class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-whitesmoke dark:text-highlight-dark text-2xl"
+        >
+          Our Contact Form
+        </h2>
 
         <form action="https://httpbin.org/get" method="get" class="contact__form">
           <fieldset class="border-none">
-            <legend class="off-screen">Send Us A Message</legend>
+            <legend class="absolute left-[-10000px]">Send Us A Message</legend>
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="name">Name:</label>
               <input
-                class="input-content font-inherit"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 type="text"
                 name="name"
                 id="name"
@@ -41,7 +49,7 @@
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="email">Email:</label>
               <input
-                class="input-content font-inherit"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 type="email"
                 name="email"
                 id="email"
@@ -53,7 +61,7 @@
               <label class="block font-bold" for="message">Your Message:</label>
               <br />
               <textarea
-                class="input-content font-inherit"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-border-dark border-border-light font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
                 name="message"
                 id="message"
                 cols="30"
@@ -63,8 +71,18 @@
             </p>
           </fieldset>
           <div class="space-x-4 mx-[1em]">
-            <button class="contact-button font-inherit" type="submit">Send</button>
-            <button class="contact-button font-inherit" type="reset">Reset</button>
+            <button
+              class="p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              type="submit"
+            >
+              Send
+            </button>
+            <button
+              class="p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              type="reset"
+            >
+              Reset
+            </button>
           </div>
         </form>
       </article>
@@ -75,7 +93,3 @@
 <script lang="ts" setup>
 import HeroSection from '@/components/HeroSection.vue'
 </script>
-
-<style scoped>
-/* Add your styles here */
-</style>

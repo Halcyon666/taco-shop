@@ -6,47 +6,8 @@
 
 @layer components {
 
+    /* only small,basic style can declare here*/
+    /* first use ctr+alt+shitf+j multi-edit or component inline styl, don't use scoped style */
 
-    .custom-border-color {
-        @apply dark:border-border-dark border-border-light
-    }
 
-    /* Page base element */
-    .app {
-        @apply bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid custom-border-color shadow-light dark:shadow-dark
-    }
-
-    /* menu */
-    .menu-item {
-        @apply w-full p-4 border-2 custom-border-color grid place-content-center
-    }
-    .text-highligh {
-        @apply text-highlight-light dark:text-highlight-dark
-    }
-
-    .menu-item-highlight {
-        @apply text-highligh font-bold h-full place-content-center
-    }
-
-    /* h2 */
-    .h2-style {
-        @apply font-headings tracking-wide mb-4 text-highligh text-2xl
-    }
-
-    /* off screen */
-    .off-screen {
-        @apply absolute left-[-10000px]
-    }
-
-    .font-inherit {
-        @apply font-content font-[var(--FS)]
-    }
-
-    .input-content {
-        @apply p-[0.5em] rounded-[15px] border-[2px] w-full text-black custom-border-color
-    }
-
-    .contact-button {
-        @apply p-[0.5em] rounded-[15px] font-bold bg-highlight-light dark:bg-highlight-dark text-white dark:text-black
-    }
 }

@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="app">
+  <div
+    id="app"
+    class="bg-body-light dark:bg-body-dark text-font-light dark:text-font-dark min-h-screen max-w-[800px] mx-auto border-l border-r border-solid dark:border-border-dark border-border-light shadow-light dark:shadow-dark"
+  >
     <div class="sticky z-[1] top-0">
       <div class="flex bg-black px-[19.950px] py-[9.258px]">
         <div class="text-center text-[37.0304px] font-headings mx-auto w-full text-white">
@@ -22,14 +25,15 @@
         </svg>
       </div>
       <div
-        class="bg-white dark:bg-[#141414] border-b custom-border-color font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
+        class="bg-white dark:bg-[#141414] border-b dark:border-border-dark border-border-light font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
       >
-        <div class="header__ul">
+        <div class="px-[0.25em] py-[2.5%] list-none flex justify-evenly gap-4">
           <router-link
             :to="link.to"
             v-for="link in links"
             :key="link.to"
             :class="{ hidden: link.hidden }"
+            class="text-black dark:text-white"
           >
             {{ link.label }}
           </router-link>
@@ -41,8 +45,8 @@
 
     <footer class="sticky bottom-0 bg-black text-center text-white p-[0.25em] h-8">
       <p class="leading-6">
-        <span class="whitespace-nowrap">Copyright &copy; <time id="year"></time></span>
-        <span class="whitespace-nowrap">Little Taco Shop</span>
+        <span class="whitespace-nowrap">Copyright &copy; {{ new Date().getFullYear() }}</span>
+        <span class="whitespace-nowrap"> Little Taco Shop</span>
       </p>
     </footer>
   </div>
@@ -117,5 +121,3 @@ onMounted(() => {
   changeTheme()
 })
 </script>
-
-<style></style>
