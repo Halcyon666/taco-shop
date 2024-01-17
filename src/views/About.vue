@@ -13,7 +13,7 @@
     <main class="px-[0.25em] py-2.5">
       <article
         id="about"
-        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:mt-4 last:min-h-[calc(100vh - 20rem)] pl-5"
       >
         <h2 class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl">
           About LTS
