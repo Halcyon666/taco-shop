@@ -11,10 +11,10 @@
     />
 
     <main class="main">
-      <article class="main__article mx-[1em]">
-        <h2
-          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl"
-        >
+      <article
+        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] mx-[1em] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+      >
+        <h2 class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl">
           Hours
         </h2>
         <p>We are open 7 days a week!</p>

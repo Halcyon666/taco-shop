@@ -11,9 +11,11 @@
     />
 
     <main class="main">
-      <article class="main__article">
+      <article
+        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+      >
         <h2
-          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl mx-[1em]"
+          class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl mx-[1em]"
         >
           Our Location
         </h2>
@@ -25,9 +27,11 @@
         </address>
       </article>
       <hr />
-      <article class="main__article contact">
+      <article
+        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] contact first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+      >
         <h2
-          class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-white dark:text-white text-2xl"
+          class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl"
         >
           Our Contact Form
         </h2>

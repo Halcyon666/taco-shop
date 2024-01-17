@@ -27,13 +27,14 @@
       <div
         class="bg-white dark:bg-[#141414] border-b dark:border-white border-[#333] font-bold shadow-0_6px_5px_-5px_rgba(0,0,0,0.3) dark:shadow-0_6px_5px_-5px_rgba(255,255,255,0.3)"
       >
+        <!-- todo text-[#00000099] not support rbga hsla hwb ?? -->
         <div class="px-[0.25em] py-[2.5%] list-none flex justify-evenly gap-4">
           <router-link
             :to="link.to"
             v-for="link in links"
             :key="link.to"
             :class="{ hidden: link.hidden }"
-            class="text-black dark:text-white"
+            class="text-black dark:text-white hover:text-[#00000099] dark:hover:text-orange-500 focus-visible:text-[#00000099] dark:focus-visible:text-orange-500 active:text-orange-500 dark:active:text-[#fcc867]"
           >
             {{ link.label }}
           </router-link>

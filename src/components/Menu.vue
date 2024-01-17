@@ -1,6 +1,10 @@
 <!-- MenuComponent.vue -->
 <template>
-  <article id="menu" class="main__article menu">
+  <!-- todo first and last doesn't work -->
+  <article
+    id="menu"
+    class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:text-green-500 first:mt-40 last:min-h-[calc(100vh-20rem)]"
+  >
     <h2 class="pl-5 font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl">
       Our Menu
     </h2>
