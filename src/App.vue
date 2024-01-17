@@ -34,7 +34,7 @@
             v-for="link in links"
             :key="link.to"
             :class="{ hidden: link.hidden }"
-            class="text-black dark:text-white hover:text-black/[.6] dark:hover:text-orange-500 focus-visible:text-black/[.6] dark:focus-visible:text-orange-500 active:text-orange-500 dark:active:text-[#fcc867]"
+            class="text-black dark:text-white border-b border-[#333] dark:border-[whitesmoke] hover:text-black/[.6] dark:hover:text-orange-500 focus-visible:text-black/[.6] dark:focus-visible:text-orange-500 active:text-orange-500 dark:active:text-[#fcc867]"
           >
             {{ link.label }}
           </router-link>
