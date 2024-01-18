@@ -5,7 +5,7 @@ module.exports = {
     // config location
     tailwindcss: { config: './tailwind.config.ts' },
     autoprefixer: {},
-
+    cssnano: {},
     // nest css
     'tailwindcss/nesting': 'postcss-nesting',
     'postcss-preset-env': {
