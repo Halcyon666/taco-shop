@@ -2,8 +2,8 @@
   <section class="relative">
     <!-- here dynamic hero__h2 style and hidden when not at home page -->
     <div
-      :class="{ hero__h2: title === 'Bienvenidos!', hidden: title !== 'Bienvenidos!' }"
-      class="font-headings tracking-wide mb-4 bg-[#33b233] text-[whitesmoke] dark:text-black text-2xl"
+      :class="{ hidden: title !== 'Bienvenidos!' }"
+      class="hero__h2 font-headings tracking-wide mb-4 bg-[#33b233] text-[whitesmoke] dark:text-black text-2xl animate-[showWelcome_0.5s_ease-in-out_1s_forwards] px-[0.25em] py-[0.5em] absolute top-[-100px] left-[20px]"
     >
       {{ title }}
     </div>

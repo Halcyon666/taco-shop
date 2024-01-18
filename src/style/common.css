@@ -8,12 +8,6 @@
 
   /* COLORS */
   --BORDER-COLOR: #333;
-  --HERO-BGCOLOR: hsla(120, 56%, 45%, 0.749);
-  --HERO-COLOR: #fff;
-  --LINK-ACTIVE: #ffa500;
-  --LINK-COLOR: #000;
-  --LINK-HOVER: rgba(0, 0, 0, 0.6);
-
 
   --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
@@ -21,26 +15,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --BORDER-COLOR: white;
-    --HERO-COLOR: #333;
-    --LINK-ACTIVE: #fcc867;
-    --LINK-COLOR: white;
-    --LINK-HOVER: hsl(39, 100%, 50%);
   }
 }
 
 /* HERO */
 .hero__h2 {
-  background-color: var(--HERO-BGCOLOR);
-  color: var(--HERO-COLOR);
-  padding: 0.25em 0.5em;
-  text-shadow: 2px 2px 5px var(--BORDER-COLOR);
-  position: absolute;
-  top: -100px;
-  left: 20px;
-  animation: showWelcome 0.5s ease-in-out 1s forwards;
+  text-shadow: 2px 2px 5px purple;
 }
 
-@keyframes showWelcome {
+/* @keyframes showWelcome {
   0% {
     top: -20px;
     transform: skew(0deg, -5deg) scaleY(0);
@@ -55,4 +38,4 @@
     top: 20px;
     transform: skew(-10deg, -5deg) scaleY(1);
   }
-}
+} */
