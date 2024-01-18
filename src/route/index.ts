@@ -3,19 +3,19 @@ import type { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
+    path: '/taco-shop/',
     component: () => import('@/views/Home.vue'),
   },
   {
-    path: '/hours',
+    path: '/taco-shop/hours',
     component: () => import('@/views/Hours.vue'),
   },
   {
-    path: '/contact',
+    path: '/taco-shop/contact',
     component: () => import('@/views/Contact.vue'),
   },
   {
-    path: '/about',
+    path: '/taco-shop/about',
     component: () => import('@/views/About.vue'),
   },
 ]

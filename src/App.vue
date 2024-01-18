@@ -88,11 +88,11 @@ const changeTheme = () => {
 const route = useRoute()
 const pageTitle = ref('Little Taco Shop')
 const links = ref([
-  { to: '/', label: 'Home', hidden: false },
-  { to: '/#menu', label: 'Menu', hidden: false },
-  { to: '/hours', label: 'Hours', hidden: false },
-  { to: '/contact', label: 'Contact', hidden: false },
-  { to: '/about', label: 'About', hidden: false },
+  { to: '/taco-shop/', label: 'Home', hidden: false },
+  { to: '/taco-shop/#menu', label: 'Menu', hidden: false },
+  { to: '/taco-shop/hours', label: 'Hours', hidden: false },
+  { to: '/taco-shop/contact', label: 'Contact', hidden: false },
+  { to: '/taco-shop/about', label: 'About', hidden: false },
 ])
 
 // BYNAMIC DISPLAY LINKS
