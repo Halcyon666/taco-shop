@@ -1,0 +1,13 @@
+
+
+/* || VARIABLES */
+:root {
+  /* ONE USAGE LEFT IN index.html bg-[--BG-COLOR] */
+  --BG-COLOR: purple;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BG-COLOR: #0f172a;
+  }
+}
