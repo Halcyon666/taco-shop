@@ -1,3 +1,5 @@
+[![Deploy taco shop](https://github.com/Halcyon666/taco-shop/actions/workflows/deploy.yml/badge.svg)](https://github.com/Halcyon666/taco-shop/actions/workflows/deploy.yml)
+
 # Introduce
 
 this repository use vue3 + ts + tailwind, finish a simple page 🌮taco shop,
