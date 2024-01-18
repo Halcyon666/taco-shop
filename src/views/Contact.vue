@@ -12,7 +12,7 @@
 
     <main class="main">
       <article
-        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
       >
         <h2
           class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl mx-[1em]"
@@ -28,7 +28,7 @@
       </article>
       <hr />
       <article
-        class="scroll-mt-[6.5rem] m-[var(--MARGIN))] contact first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] contact first:mt-4 last:min-h-[calc(100vh - 20rem)]"
       >
         <h2
           class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl"

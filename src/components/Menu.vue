@@ -6,12 +6,12 @@
   <div>
     <article
       id="menu"
-      class="scroll-mt-[6.5rem] m-[var(--MARGIN))] first:mt-4 last:min-h-[calc(100vh-20rem)]"
+      class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh-20rem)]"
     >
       <h2 class="pl-5 font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl">
         Our Menu
       </h2>
-      <table class="grid grid-cols-3 grid-rows-8 gap-0.1em mb-4 ml-5 mr-5">
+      <table class="grid grid-cols-3 grid-rows-8 gap-[.1em] mb-4 mx-5">
         <caption class="absolute left-[-10000px]">
           Our Tacos
         </caption>
