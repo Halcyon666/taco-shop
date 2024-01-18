@@ -1,9 +1,9 @@
 <template>
   <section class="relative">
-    <!-- here dynamic hero__h2 style and hidden when not at home page -->
+    <!--  animate style hidden if not at home page -->
     <div
       :class="{ hidden: title !== 'Bienvenidos!' }"
-      class="hero__h2 font-headings tracking-wide mb-4 bg-[#33b233] text-[whitesmoke] dark:text-black text-2xl animate-[showWelcome_0.5s_ease-in-out_1s_forwards] px-[0.25em] py-[0.5em] absolute top-[-100px] left-[20px]"
+      class="[text-shadow:2px_2px_5px_#333] dark:[text-shadow:2px_2px_5px_white] font-headings tracking-wide mb-4 bg-[#33b233] text-[whitesmoke] dark:text-black text-2xl animate-[showWelcome_0.5s_ease-in-out_1s_forwards] px-[0.25em] py-[0.5em] absolute top-[-100px] left-[20px]"
     >
       {{ title }}
     </div>
