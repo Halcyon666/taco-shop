@@ -2,7 +2,7 @@
   <div>
     <HeroSection
       title="Bienvenidos!"
-      imageSrc="src/assets/img/tacos_and_drink_1000x667.png"
+      imageSrc="/src/assets/img/tacos_and_drink_1000x667.png"
       imageAlt="Tacos and a Drink"
       imageTitle="We love tacos!"
       imageWidth="1000"
