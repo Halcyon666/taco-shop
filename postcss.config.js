@@ -2,8 +2,8 @@
 // postcss.config.js
 module.exports = {
   plugins: {
-    // config location, need this, this is default configuration location
-    // tailwindcss: { config: './tailwind.config.ts' },
+    // config location, defaullt is tailwind.config.js,here must indicate the file name
+    tailwindcss: { config: './tailwind.config.ts' },
     autoprefixer: {},
     cssnano: {},
     // nest css
