@@ -2,7 +2,7 @@
   <div>
     <HeroSection
       title="contact"
-      imageSrc="src/assets/img/tacos_close_up_1000x649.png"
+      :imageSrc="img"
       imageAlt="Little Taco Shop Tacos"
       imageTitle="Tacos ready to eat!"
       imageWidth="1000"
@@ -96,4 +96,5 @@
 
 <script lang="ts" setup>
 import HeroSection from '@/components/HeroSection.vue'
+const img = new URL('@/assets/img/tacos_close_up_1000x649.png', import.meta.url).href
 </script>
