@@ -25,4 +25,6 @@ pnpm i
 pnpm dev
 ```
 
-visit http://localhost:5174/
+# the preview of project 
+
+https://halcyon666.github.io/taco-shop/
