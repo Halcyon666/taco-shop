@@ -13,7 +13,7 @@
     <main class="px-[0.25em] py-2.5">
       <article
         id="about"
-        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh - 20rem)] pl-5"
+        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh-20rem)] pl-5"
       >
         <h2 class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl">
           About LTS
@@ -23,7 +23,7 @@
           shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a
           unique and interesting place to our little town.
         </p>
-        <aside class="m-[var(--MARGIN)]">
+        <aside class="m-[clamp(1em,2.5vh,1.5em)_0]">
           <div class="font-headings tracking-widest mb-4 text-[#33b233] dark:text-white">
             Taco Trivia
           </div>

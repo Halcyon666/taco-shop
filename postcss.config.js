@@ -2,8 +2,8 @@
 // postcss.config.js
 module.exports = {
   plugins: {
-    // config location
-    tailwindcss: { config: './tailwind.config.ts' },
+    // config location, need this, this is default configuration location
+    // tailwindcss: { config: './tailwind.config.ts' },
     autoprefixer: {},
     cssnano: {},
     // nest css
@@ -11,7 +11,7 @@ module.exports = {
     'postcss-preset-env': {
       features: { 'nesting-rules': false },
     },
-    // optimizing for production
+    // optimizing for production, compres css
     ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}),
   },
 }

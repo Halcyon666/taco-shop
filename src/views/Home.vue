@@ -12,7 +12,11 @@
 
     <Menu id="menu" />
 
-    <a href="#" class="block text-center mx-auto">Back To Top</a>
+    <div class="flex justify-center">
+      <a href="#" class="block text-center border-b mb-4 font-bold border-black dark:border-white"
+        >Back To Top</a
+      >
+    </div>
   </div>
 </template>
 

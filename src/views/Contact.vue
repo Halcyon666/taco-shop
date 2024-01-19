@@ -12,7 +12,7 @@
 
     <main class="main">
       <article
-        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh-20rem)]"
       >
         <h2
           class="font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl mx-[1em]"
@@ -28,7 +28,7 @@
       </article>
       <hr />
       <article
-        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] contact first:mt-4 last:min-h-[calc(100vh - 20rem)]"
+        class="scroll-mt-[6.5rem] m-[clamp(1em,2.5vh,1.5em)_0] first:mt-4 last:min-h-[calc(100vh-20rem)]"
       >
         <h2
           class="mx-[1em] font-headings tracking-wide mb-4 text-[#33b233] dark:text-white text-2xl"
@@ -36,13 +36,13 @@
           Our Contact Form
         </h2>
 
-        <form action="https://httpbin.org/get" method="get" class="contact__form">
+        <form action="https://httpbin.org/get" method="get">
           <fieldset class="border-none">
             <legend class="absolute left-[-10000px]">Send Us A Message</legend>
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="name">Name:</label>
               <input
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[size:clamp(1rem,2.2vh,1.5rem)]"
                 type="text"
                 name="name"
                 id="name"
@@ -53,7 +53,7 @@
             <p class="mx-[1em] my-0">
               <label class="block font-bold" for="email">Email:</label>
               <input
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[size:clamp(1rem,2.2vh,1.5rem)]"
                 type="email"
                 name="email"
                 id="email"
@@ -65,7 +65,7 @@
               <label class="block font-bold" for="message">Your Message:</label>
               <br />
               <textarea
-                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+                class="p-[0.5em] rounded-[15px] border-[2px] w-full text-black dark:border-white border-[#333] font-content font-[size:clamp(1rem,2.2vh,1.5rem)]"
                 name="message"
                 id="message"
                 cols="30"
@@ -76,13 +76,13 @@
           </fieldset>
           <div class="space-x-4 mx-[1em]">
             <button
-              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[size:clamp(1rem,2.2vh,1.5rem)]"
               type="submit"
             >
               Send
             </button>
             <button
-              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[clamp(1rem, 2.2vh, 1.5rem)]"
+              class="p-[0.5em] rounded-[15px] font-bold bg-[#33b233] dark:bg-white text-white dark:text-black font-content font-[size:clamp(1rem,2.2vh,1.5rem)]"
               type="reset"
             >
               Reset
