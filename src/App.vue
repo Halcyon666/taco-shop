@@ -1,5 +1,4 @@
 <template>
-  <!-- todo fix shadow shadow-light dark:shadow-dark -->
   <div
     id="app"
     class="bg-[#fff] dark:bg-[#333] text-[#000] dark:text-white min-h-screen max-w-[800px] mx-auto border-l border-r border-solid dark:border-white border-[#333] shadow-[0_0_10px_#333] dark:shadow-[0_0_10px_whitesmoke]"
