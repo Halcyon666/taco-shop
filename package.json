@@ -28,7 +28,7 @@
     "@vue/compiler-sfc": "^3.4.21",
     "@vue/tsconfig": "^0.5.1",
     "@vueuse/core": "^10.9.0",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.19",
     "cssnano": "^6.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
